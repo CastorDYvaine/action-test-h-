@@ -43,4 +43,5 @@
 #     selected variants for this port, and the optional 'key'
 #     deselect for the list of deselected variants for this port.
 
-    parameters: # default is :no-value
+
+parameters: []
