@@ -42,6 +42,4 @@
 #     of the port to install, optional key 'select' for the list of
 #     selected variants for this port, and the optional 'key'
 #     deselect for the list of deselected variants for this port.
-
-
-parameters: []
+  parameters: []
