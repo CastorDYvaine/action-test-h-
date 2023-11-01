@@ -2,12 +2,12 @@
   # You may pin to the exact commit or the version.
   # uses: melusina-org/setup-macports@f7ac740dc7b200a65f5868a7ee75455c27eb9280
   uses: melusina-org/setup-macports@v1.1.2
-  with:
+  with:   .github/parameters/gha-install-macports.yaml
+
     # Pathname to a configuration file for the GHA-INSTALL-MACPORTS
 #action. When no pathname is provided, the configuration is
 #expected to be found under
 
-  .github/parameters/gha-install-macports.yaml
 
 #It is however no error when this file is not present.
 
