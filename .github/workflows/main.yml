@@ -4,43 +4,43 @@
   uses: melusina-org/setup-macports@v1.1.2
   with:
     # Pathname to a configuration file for the GHA-INSTALL-MACPORTS
-action. When no pathname is provided, the configuration is
-expected to be found under
+#action. When no pathname is provided, the configuration is
+#expected to be found under
 
   .github/parameters/gha-install-macports.yaml
 
-It is however no error when this file is not present.
+#It is however no error when this file is not present.
 
-The configuration file is in YAML and has the following format:
+#The configuration file is in YAML and has the following format:
 
   version: '2.8.1'
-    The MacPorts version to install.
+    #The MacPorts version to install.
   prefix: '/opt/local'
-    The installation prefix to install MacPortd to.
-    Currently the only supported value is '/opt/local'.
+#    The installation prefix to install MacPortd to.
+ #   Currently the only supported value is '/opt/local'.
   variants.select: []
-    The list of selected variants in the global variants
-    configuration.
+  #  The list of selected variants in the global variants
+   # configuration.
 
-    See Also variants.conf(5).
+    #See Also variants.conf(5).
 
   variants.deselect: []
-    The list of deselected variants in the global variants
-    configuration.
+   # The list of deselected variants in the global variants
+    #configuration.
 
-    See Also: variants.conf(5).
+    #See Also: variants.conf(5).
     
   sources: ['rsync://rsync.macports.org/macports/release/tarballs/ports.tar']
-    The list of source locations for port definitions. The first
-    entry of the list is marked with default.
+  #  The list of source locations for port definitions. The first
+#    entry of the list is marked with default.
 
-    See Also: sources.conf(5)
+ #   See Also: sources.conf(5)
 
   ports: []
-     The list of additional ports to install. Each term of the
-     list is a dictionart with the mandatory 'name' holding the name
-     of the port to install, optional key 'select' for the list of
-     selected variants for this port, and the optional 'key'
-     deselect for the list of deselected variants for this port.
+ #    The list of additional ports to install. Each term of the
+ #    list is a dictionart with the mandatory 'name' holding the name
+#     of the port to install, optional key 'select' for the list of
+#     selected variants for this port, and the optional 'key'
+#     deselect for the list of deselected variants for this port.
 
     parameters: # default is :no-value
